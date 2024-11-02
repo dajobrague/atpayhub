@@ -5,7 +5,7 @@ if (isset($_GET['code'])) {
 
     // Set up Stripe API credentials
     $client_id = 'ca_R8lPy1MMdeMlEqv5OwDjF1UzfOJnmUbV';
-    $client_secret = 'sk_test_51MRmCtAGqHG5kGXDF0GkNaA2twrHyHRBiEOkLcJQLZveDhr6nPt7fs5QoC7JoI005jPBqOQYbnqEkW5SlfM51aqu00UD48SeIh';
+    $client_secret = process.env.STRIPE_KEY;
 
     // Prepare data for the request to get the access_token
     $data = array(
@@ -33,8 +33,8 @@ if (isset($_GET['code'])) {
         $stripe_user_id = $response_data['stripe_user_id'];
 
         // Supabase API credentials
-        $supabase_url = 'https://kwvtanwkjwzhquptfsnv.supabase.co';
-        $supabase_key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt3dnRhbndrand6aHF1cHRmc252Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMDQyMTA2NCwiZXhwIjoyMDQ1OTk3MDY0fQ.zBj1kg5jreLQaesW1B0DkuIg8luqAoqlzDRs4C_UJFg';
+        $supabase_url = process.env.SUPABASE_URL;
+        $supabase_key = process.env.SUPABASE_KEY;
 
         // Data to insert in Supabase
         $data = json_encode(array(
