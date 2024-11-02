@@ -1,0 +1,22 @@
+input {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px auto;
+    width: 80%;
+    max-width: 300px;
+}
+
+#message {
+    margin-top: 20px;
+    color: #666;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+}

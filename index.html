@@ -1,4 +1,4 @@
-echo '<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,9 @@ echo '<!DOCTYPE html>
     <title>Auth App</title>
     <!-- Supabase JS library -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.28.0/dist/umd/supabase.min.js"></script>
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/auth.css">
 </head>
 <body>
     <div class="container">
@@ -14,6 +16,9 @@ echo '<!DOCTYPE html>
         <button onclick="redirectToSignUp()">Sign Up</button>
         <button onclick="redirectToLogIn()">Log In</button>
     </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
     <script src="js/main.js"></script>
 </body>
-</html>' > index.html
+</html>
